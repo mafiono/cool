@@ -4,16 +4,16 @@
     "main": {
       "hasCustomCSS": true,
       "logo": {
-        "favicon": "_favicon.ico",
-        "image": "_logo.png",
-        "imageFix": "_logo2.png",
-        "secondImage": "_logo-circle.png",
+        "favicon": "favicon.ico",
+        "image": "skins\/vbet.com\/images\/logo.png",
+        "imageFix": "skins\/vbet.com\/images\/logo2.png",
+        "secondImage": "images\/VBET\/logo-circle.png",
         "height": 45,
         "heightFix": 30,
         "imageByLang": {
           "arm": "skins\/vbet.com\/images\/arm.svg",
           "rus": "skins\/vbet1.com\/images\/ru.svg",
-          "eng": "skins\/vbet.com\/images\/eng.svg",
+          "eng": "skins\/vbet.com\/images\/eng.png",
           "ukr": "skins\/vbet.com\/images\/ua.png",
           "fre": "skins\/vbet.com\/images\/fr.svg",
           "geo": "skins\/vbet.com\/images\/geo.svg"
