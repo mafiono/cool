@@ -1,35 +1,29 @@
 <!doctype html>
 <html dir="{{::(conf.availableLanguages[env.lang].rtl ? 'rtl' : 'ltr')}}"
       ng-class="{'integration-auto-height': confPartner.notifyOnResize}"
-      lang="{{::(conf.availableLanguages[env.lang].short.toLowerCase())}}">
+      lang="{{::(conf.availableLanguages[env.lang].short.toLowerCase())}}" ng-app="wp">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8">
-    <meta name="ahrefs-site-verification" content="cb555e0f05de657484ea9bbd93144b2f0164a5ffc5e2217ece10a3587f6c2db1">
-    <meta name="google-site-verification" content="Asg-2YiFaUKr_F2JpkHzGX-5ywN1CyvN4Megi2WZy7A" />
 
     <!-- build:template -->
     <title ng-bind="siteTitle"></title>
-    <meta name="description" content="<%=description%>">
-    <meta name="keywords" content="<%=keywords%>">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
     <link rel="icon" href="skins/vbet.com/favicon.ico" />
 
-    <link rel="stylesheet" href="build/app/vbet.com/skins/vbet.com/css/skin.min.css?buildDate"/>
-    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="skins/vbet.com/css/skin.min.css" />
+    <!--[if lt IE 10]>-->
     <script src="//cdn.rawgit.com/jpillora/xdomain/0.7.3/dist/xdomain.min.js"></script>
     <script>xdomain.slaves({"https://swarm5.betconstruct.com" : "/xdomain-proxy.html", "http://casino.vbet.com" : "/global/partners/xdomain/xDomainProxy.html"});</script>
-    <![endif]-->
+    <!--<![endif]-->
     <!-- /build -->
 
     <link ng-if="conf.customLanguageCss.indexOf(env.lang) !== -1" rel="stylesheet" ng-href="css/fonts/{{env.lang}}.css"/>
 
     <link ng-if="conf.customLanguageCss.indexOf(env.lang) !== -1" rel="stylesheet" ng-href="skins/{{conf.skin}}/css/fonts/{{env.lang}}.css"/>
     <!-- /build -->
-
-    <!-- build:remove -->
-    <title ng-bind="siteTitle"></title>
-    <link rel="stylesheet" ng-href="skins/{{conf.skin}}/css/skin.css"/>
     <!-- /build -->
 </head>
 <body class="{{::conf.site_name.split('.').join('')}}">
@@ -67,14 +61,8 @@
     <!-- /build -->
 
     <script id="app-config" data-config-url-path="" data-id="4" data-config-is-externall="true"></script>
-    <!-- build:template
-    <script src="<%=resourcePathPrefix%>app.min.js?<%=buildDate%>-<%=gitinfo%>" id="bc-main-js"></script>
-       <% if (dynamicLibs) { %>
-            <% for (lib of dynamicLibs.split(',')) {%>
-                    <script src="<%=resourcePathPrefix%>/libs/<%=lib%>?<%=buildDate%>-<%=gitinfo%>"  defer></script>
-             <% }%>
-       <% }%>
-    /build -->
+    <!-- build:template -->
+    <script src="app.min.js" id="bc-main-js"></script>
 
 
     <!-- build:remove -->
