@@ -13,7 +13,7 @@ upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: "/images"
 use_front_matter_path: true
-file_template: ":filename:"
+file_template: ":filename:, :year:, :month:, :day:."
 build:
   preview_output_directory: "/"
   install_dependencies_command: npm install
