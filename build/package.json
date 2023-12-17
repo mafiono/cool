@@ -21,7 +21,7 @@
   "private": true,
   "devDependencies": {
     "bagpipe": "^0.3.5",
-    "grunt": "^0.4.3",
+    "grunt": "^1.0.0",
     "grunt-angular-templates": "*",
     "grunt-closure-compiler": "*",
     "grunt-contrib-clean": "*",
